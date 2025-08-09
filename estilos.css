@@ -42,7 +42,7 @@ object, svg {
   width: 100%;    /*que tan a los lado estara */
   height: 100%;   /* que tan alto estara*/
   position: relative; /* para manejarlo mejor */
-  top: -100px;     /* para hacer que suba */
+  top: -230px;     /* para hacer que suba */
 }
 
 .tarjeta {
@@ -62,4 +62,72 @@ object, svg {
 
 .oculto {
   display: none;
+}
+
+.barra-superior {
+  background-color: #5c3d2e;
+  color: #f5f5dc;
+  padding: 10px 20px;
+  font-family: 'Georgia', serif;
+  display: flex;
+  gap: 15px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.boton-info {
+  position: relative;
+}
+
+.boton-info button {
+  background-color: #7a5230;
+  color: #fff;
+  border: 2px solid gold;
+  border-radius: 5px;
+  padding: 8px 12px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.boton-info button:hover {
+  background-color: #a67c52;
+}
+
+/* Tarjeta emergente */
+.tarjeta-info {
+  display: none;
+  position: absolute;
+  top: 40px;
+  left: 0;
+  background-color: #2c2c2c;
+  color: #fff;
+  padding: 10px 15px;
+  border: 1px solid gold;
+  border-radius: 8px;
+  white-space: nowrap;
+  z-index: 200;
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+/* Mostrar tarjeta al hacer hover */
+.boton-info:hover .tarjeta-info {
+  display: block;
+}
+
+.bandera {
+  height: 40px;
+  border: 2px solid gold;
+  border-radius: 4px;
+  box-shadow: 0 0 5px rgba(0,0,0,0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+  transform-origin: top left; /* Expande hacia abajo y derecha */
+}
+
+.bandera:hover {
+  transform: scale(2.5);
+  z-index: 1000;
+  box-shadow: 0 0 15px rgba(0,0,0,0.6);
 }
