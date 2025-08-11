@@ -36,3 +36,23 @@ function cerrarTarjeta(){
     document.getElementById("contenedor").style.filter = "none";
 
 }
+
+
+const sidebar = document.querySelector(".sidebar");
+const mainToggle = document.querySelector(".main-toggle");
+
+// Mostrar/ocultar el panel completo
+mainToggle.addEventListener("click", function () {
+  sidebar.classList.toggle("oculto");
+});
+
+// Subpaneles individuales
+const accordions = document.querySelectorAll(".accordion");
+
+accordions.forEach(btn => {
+  btn.addEventListener("click", function () {
+    const panel = this.nextElementSibling;
+    panel.style.display = panel.style.display === "block" ? "none" : "block";
+  });
+});
+

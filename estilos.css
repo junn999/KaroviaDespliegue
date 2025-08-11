@@ -131,3 +131,52 @@ object, svg {
   z-index: 1000;
   box-shadow: 0 0 15px rgba(0,0,0,0.6);
 }
+
+.main-toggle {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  z-index: 1001;
+  background-color: #3a3a3a;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.sidebar {
+  position: fixed;
+  top: 70px; /* debajo del botón maestro */
+  left: 20px;
+  background-color: #1e1e1e;
+  color: white;
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+  max-width: 250px;
+  z-index: 1000;
+  overflow-y: auto;
+  max-height: 80vh; /* se adapta sin tapar el mapa */
+}
+
+.oculto {
+  display: none;
+}
+
+.accordion {
+  background-color: #2c2c2c;
+  color: white;
+  cursor: pointer;
+  padding: 10px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  margin-bottom: 5px;
+}
+
+.panel {
+  display: none;
+  background-color: #2c2c2c;
+  padding: 10px;
+}
