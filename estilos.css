@@ -21,8 +21,8 @@ body{
     border-radius: 8px;   
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center;
-}
+    background-position: center;  
+  }
 
 .contenedor path{
     fill: #1c8701;
@@ -45,23 +45,17 @@ object, svg {
   top: -230px;     /* para hacer que suba */
 }
 
-.tarjeta {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  background-color: #2c2c2c;
-  color: #fff;
-  padding: 20px;
-  border: 2px solid gold;
-  border-radius: 10px;
-  z-index: 10;
-  width: 300px;
-  box-shadow: 0 0 20px rgba(0,0,0,0.7);
+
+#tarjeta-provincia { 
+  position: absolute; 
+  right: 20px; 
+  top: 20px; 
+  z-index: 50; 
 }
 
-.oculto {
-  display: none;
+path { 
+  transition: opacity .2s, fill .2s; 
+  vector-effect: non-scaling-stroke; 
 }
 
 .barra-superior {
