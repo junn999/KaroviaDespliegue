@@ -10,6 +10,7 @@ body{
     background-repeat: no-repeat;
     background-position: center;
     filter: sepia(0.3) contrast(1.1);
+    overflow-y: auto;
 }
 
 .contenedor{
@@ -270,4 +271,16 @@ path {
   vertical-align: middle;
   margin-right: 6px;
   opacity: 0.8;
+}
+.pie-pagina {
+  width: 100%;
+  text-align: center;
+  padding: 12px 0;
+  background-color: #111;
+  color: #ccc;
+  font-size: 14px;
+  font-family: 'Cinzel', serif;
+  position: relative;
+  bottom: 0;
+  z-index: 5;
 }
