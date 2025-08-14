@@ -8,97 +8,97 @@ const datosProvincias = {
   departamento_1: {
     nombre: "Zelenik",
     habitantes: "2,150,000",
-    produccion: "----",
+    produccion: "Petroleo",
     ejercito: "1200 soldados",
   },
   departamento_2: {
     nombre: "Drovnik",
     habitantes: "850,000",
-    produccion: "Explotación maderera ",
-    ejercito: "---------"
+    produccion: "Explotación madera",
+    ejercito: "1,400"
   },
   departamento_3: {
     nombre: " Karnov",
     habitantes: "1,500,000",
-    produccion: "-----",
-    ejercito: "-------"
+    produccion: "Petroleo",
+    ejercito: "7,000"
     // No tiene capital
   },
    departamento_4: {
     nombre: "Volshka",
     habitantes: "1,800,000",
-    produccion: "------",
-    ejercito: "------"
+    produccion: "Carbón",
+    ejercito: "200"
     // No tiene capital
   },
    departamento_5: {
     nombre: "Tarnovia",
     habitantes: "1,200,000",
-    produccion: "-----",
-    ejercito: "----"
+    produccion: "Granos basicos",
+    ejercito: "3,000"
     // No tiene capital
   },
    departamento_6: {
     nombre: "Belgor",
     habitantes: "1,100,000",
-    produccion: "-----",
-    ejercito: "-----"
+    produccion: "Litio",
+    ejercito: "5,000"
     // No tiene capital
   },
    departamento_7: {
     nombre: "Rostek",
     habitantes: "950,000",
-    produccion: "-----",
-    ejercito: "-----",
+    produccion: "Oro",
+    ejercito: "4,000",
     // No tiene capital
   },
    departamento_8: {
     nombre: "Svetograd",
     habitantes: "800,000",
-    produccion: "-----",
-    ejercito: "-----",
+    produccion: "Carbón",
+    ejercito: "2,000",
     // No tiene capital
   },
    departamento_9: {
     nombre: "Mirovia",
     habitantes: "700,000",
-    produccion: "-----",
-    ejercito: "-----",
+    produccion: "Silicio",
+    ejercito: "2,500",
     // No tiene capital
   },
    departamento_9: {
     nombre: "Kresnik",
     habitantes: "650,000",
-    produccion: "-----",
-    ejercito: "-----",
+    produccion: "Plata",
+    ejercito: "1,200",
     // No tiene capital
   },
    departamento_10: {
     nombre: "Vladek",
     habitantes: "600,000",
-    produccion: "-----",
-    ejercito: "-----",
+    produccion: "Petroleo",
+    ejercito: "4,100",
     // No tiene capital
   },
    departamento_11: {
     nombre: "Novagrad",
     habitantes: "3,600,000",
-    produccion: "-----",
-    ejercito: "-----",
+    produccion: "Granos básicos",
+    ejercito: "700",
     capital: "Novagrad" 
   },
    departamento_12: {
     nombre: "Orlovia",
     habitantes: "550,000",
-    produccion: "-----",
-    ejercito: "-----",
+    produccion: "Madera",
+    ejercito: "1,000",
     // No tiene capital
   },
    departamento_13: {
     nombre: "Zarnov",
     habitantes: "400,000",
-    produccion: "-----",
-    ejercito: "-----",
+    produccion: "Litio",
+    ejercito: "3,000",
     // No tiene capital
   }
 };
@@ -168,7 +168,7 @@ function mostrarInfo(datos) {
   nombre.textContent = `Nombre: ${datos?.nombre ?? "?"}`;
   produccion.textContent = `Producción: ${datos?.produccion ?? "?"}`;
   habitantes.textContent = `Habitantes: ${datos?.habitantes ?? "?"}`;
-  ejercito.textContent = `Guarnición: ${datos?.ejercito ?? "?"}`;
+  ejercito.textContent = `Tropas: ${datos?.ejercito ?? "?"}`;
 
   if (datos?.capital) {
     capital.style.display = "block";
