@@ -1,0 +1,5 @@
+{
+    "files.autoSave": "onFocusChange",
+    "editor.colorDecoratorsLimit": 500,
+    "editor.rulers": [80, 120]
+}

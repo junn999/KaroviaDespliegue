@@ -203,6 +203,25 @@ accordions.forEach(btn => {
 });
 
 
+const sidebar2 = document.querySelector(".sidebar2");
+const mainToggle2 = document.querySelector(".main-toggle2");
+
+// Mostrar/ocultar el panel completo
+mainToggle2.addEventListener("click", function () {
+  sidebar2.classList.toggle("oculto2");
+});
+
+// Subpaneles individuales
+const accordions2 = document.querySelectorAll(".accordion2");
+
+accordions2.forEach(btn => {
+  btn.addEventListener("click", function () {
+    const panel = this.nextElementSibling;
+    panel.style.display = panel.style.display === "block" ? "none" : "block";
+  });
+});
+
+
 paths.forEach(p => {
   p.style.cursor = 'pointer';
   p.addEventListener('click', e => {
